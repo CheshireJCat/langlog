@@ -1,0 +1,31 @@
+.players {
+  .player {
+    margin-bottom: 2px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 12px;
+    background: linear-gradient(90deg, #474747, #222222);
+    .player-name {
+      letter-spacing: 2px;
+    }
+  }
+}
+
+.player-info-selector {
+  display: flex;
+  gap: 4px;
+  .player-info-tag {
+    padding: 4px;
+    opacity: 0.4;
+    cursor: pointer;
+    &.active {
+      opacity: 1;
+      background-color: #fff;
+      border-radius: 4px;
+      width: 32px;
+      text-align: center;
+    }
+  }
+}
